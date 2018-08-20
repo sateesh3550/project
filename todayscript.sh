@@ -5,7 +5,7 @@ initial_key="$1"
 #final_key="dev123"
 final_key="$2"
 configfile="/root/class/configfile"
-target="/tmp/outfile"
+target="/var/lib/jenkins/workspace/Firstproject/outfile"
 for l in configfile
   do
      if [ $l ]; then
