@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'cd /root'
-                sh 'ls'
+                sh './test1.sh'
             }
         }
         stage('Test') {
