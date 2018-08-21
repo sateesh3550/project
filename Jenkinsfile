@@ -1,17 +1,15 @@
 pipeline {
     agent any
 
-    stages {
+    node {
         stage('Build') {
             steps {
                 echo 'Building..'
             }
         }
-        node {
-            stage "initial script" {
+        stage "initial script" {
             sh "/root/test1.sh testfile"
             }
-        }
         stage('Test') {
             steps {
                 echo 'Testing..'
