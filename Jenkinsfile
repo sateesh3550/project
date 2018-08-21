@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building..'
                 sh 'ls'
             }
-            cmd = {
+            cmd {
                 sh 'cd /root'
             }
         }
