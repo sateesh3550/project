@@ -5,7 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh '/root/test1.sh testfile'
+            }
+        }
+        node {
+            stage "initial script" {
+            sh "/root/test1.sh testfile"
             }
         }
         stage('Test') {
