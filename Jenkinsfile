@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'ls'
-                sh '/root/test1.sh'
+                sh '/root/jenkins/workspace/Pipeline/test1.sh'
             }
         }
         stage('Test') {
