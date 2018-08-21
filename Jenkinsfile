@@ -7,6 +7,9 @@ pipeline {
                 echo 'Building..'
                 sh 'ls'
             }
+            cmd = {
+                sh 'cd /root'
+            }
         }
         stage('Test') {
             steps {
