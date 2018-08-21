@@ -5,8 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'cd /root'
-                sh './test1.sh'
             }
         }
         stage('Test') {
