@@ -5,8 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'cd /etc/ansible'
-                sh 'll'
+                sh 'cd /etc/ansible && ll'
             }
         }
         stage('Test') {
