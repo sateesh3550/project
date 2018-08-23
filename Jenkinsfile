@@ -5,12 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'ls'
-            }
-            cmd {
-                sh 'cd /root'
-            }
-        }
+               }
         stage('Test') {
             steps {
                 echo 'Testing..'
